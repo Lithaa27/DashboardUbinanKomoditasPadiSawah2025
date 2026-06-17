@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html>
 
 <head>
@@ -62,6 +62,7 @@ font-size:13px;
 display:grid;
 grid-template-columns:repeat(2,1fr);
 gap:30px;
+align-items: stretch; /* Memaksa kotak yang sebaris memiliki tinggi yang sama */
 }
 
 .chart-box{
@@ -69,6 +70,11 @@ background:white;
 padding:20px;
 border-radius:10px;
 box-shadow:0 2px 8px rgba(0,0,0,0.1);
+display: flex;
+flex-direction: column;
+justify-content: space-between; /* Menjaga jarak konten di dalam kotak tetap rapi */
+height: 400px; /* Menentukan tinggi statis agar semua kotak seragam */
+box-sizing: border-box;
 }
 
 .chart-full{
